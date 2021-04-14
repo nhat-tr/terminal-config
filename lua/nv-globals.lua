@@ -1,12 +1,12 @@
 O = {
     auto_close_tree = 0,
     auto_complete = true,
-    colorscheme = 'nvcode',
+    colorscheme = 'gruvbox',
     hidden_files = true,
     wrap_lines = false,
     number = true,
     relative_number = true,
-    shell = 'bash',
+    shell = 'zsh',
 
     -- @usage pass a table with your desired languages
     treesitter = {
@@ -57,8 +57,6 @@ O = {
     },
     tailwindls = {filetypes = {'html', 'css', 'scss', 'javascript', 'javascriptreact', 'typescript', 'typescriptreact'}},
     clang = {diagnostics = {virtual_text = true, signs = true, underline = true}}
-    -- css = {formatter = '', autoformat = false, virtual_text = true},
-    -- json = {formatter = '', autoformat = false, virtual_text = true}
 }
 
 DATA_PATH = vim.fn.stdpath('data')
