@@ -1,7 +1,6 @@
 -- General mappings
 require('plugins')
 require('nv-globals')
-require('nv-utils')
 vim.cmd('luafile ~/.config/nvim/nv-settings.lua')
 require('nv-autocommands')
 -- require('config')
