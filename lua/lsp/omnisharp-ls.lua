@@ -9,6 +9,6 @@ end
 
 require'lspconfig'.omnisharp.setup{
     cmd = cmd,
-    on_attach = require'lsp'.tsserver_on_attach,
+    on_attach = require'lsp'.common_on_attach,
     root_dir = require('lspconfig/util').root_pattern("*.sln", ".git")
 }

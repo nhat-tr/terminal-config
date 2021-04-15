@@ -19,6 +19,9 @@ return require('packer').startup(function(use)
     -- Packer can manage itself as an optional plugin
     use 'wbthomason/packer.nvim'
     
+    use 'w0rp/ale'
+    use 'prabirshrestha/asyncomplete.vim'
+
     -- LSP
     use 'neovim/nvim-lspconfig'
     use 'glepnir/lspsaga.nvim'
@@ -30,6 +33,9 @@ return require('packer').startup(function(use)
     use 'mfussenegger/nvim-dap'
 
     -- Autocomplete
+    use 'nvim-lua/completion-nvim'
+    use 'w0rp/ale'
+    use 'prabirshrestha/asyncomplete.vim'
     use 'hrsh7th/nvim-compe'
     use 'hrsh7th/vim-vsnip'
     use "rafamadriz/friendly-snippets"
@@ -47,8 +53,10 @@ return require('packer').startup(function(use)
     use 'ryanoasis/vim-devicons'
 
     -- Status Line and Bufferline
-    use { 'glepnir/galaxyline.nvim' }
-    use 'romgrk/barbar.nvim'
+    --use { 'glepnir/galaxyline.nvim' }
+    --use 'romgrk/barbar.nvim'
+    use 'vim-airline/vim-airline'
+    use 'vim-airline/vim-airline-themes'
 
     -- Telescope
     use 'nvim-lua/popup.nvim'
@@ -69,6 +77,7 @@ return require('packer').startup(function(use)
     use 'f-person/git-blame.nvim'
     use 'tpope/vim-fugitive'
     use 'tpope/vim-rhubarb'
+    use 'airblade/vim-gitgutter'
 
     -- Easily Create Gists
     use 'mattn/vim-gist'
@@ -83,7 +92,7 @@ return require('packer').startup(function(use)
     -- Dependency assistent
     use 'akinsho/dependency-assist.nvim'
 
-     -- General Plugins
+     -- General  
     use 'liuchengxu/vim-which-key'
     use 'kevinhwang91/nvim-bqf'
     use 'airblade/vim-rooter'
