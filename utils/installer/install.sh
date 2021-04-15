@@ -128,13 +128,13 @@ echo 'Installing NVCode'
 [ -d "$HOME/.config/nvim" ] && moveoldnvim
 
 # install pip
-which pip3 >/dev/null && echo "pip installed, moving on..." || asktoinstallpip
+#which pip3 >/dev/null && echo "pip installed, moving on..." || asktoinstallpip
 
 # install node and neovim support
-which node >/dev/null && echo "node installed, moving on..." || asktoinstallnode
+#which node >/dev/null && echo "node installed, moving on..." || asktoinstallnode
 
 # install pynvim
-pip3 list | grep pynvim >/dev/null && echo "pynvim installed, moving on..." || installpynvim
+#pip3 list | grep pynvim >/dev/null && echo "pynvim installed, moving on..." || installpynvim
 
 if [ -a "$HOME/.local/share/nvim/site/pack/packer/start/packer.nvim" ]; then
 	echo 'packer already installed'
@@ -147,12 +147,12 @@ if [ -a "$HOME/.config/nvcode/init.lua" ]; then
 else
 	# clone config down
 	cloneconfig
-	echo 'export PATH=$HOME/.config/nvcode/utils/bin:$PATH' >>~/.zshrc
-	echo 'export PATH=$HOME/.config/nvcode/utils/bin:$PATH' >>~/.bashrc
+#	echo 'export PATH=$HOME/.config/nvcode/utils/bin:$PATH' >>~/.zshrc
+#	echo 'export PATH=$HOME/.config/nvcode/utils/bin:$PATH' >>~/.bashrc
 fi
 
 echo "I recommend you also install and activate a font from here: https://github.com/ryanoasis/nerd-fonts"
 
 echo "I also recommend you add 'set preview_images_method ueberzug' to ~/.config/ranger/rc.conf"
 
-echo 'export PATH=/home/$USER/.config/nvcode/utils/bin:$PATH appending to zshrc/bashrc'
+#echo 'export PATH=/home/$USER/.config/nvcode/utils/bin:$PATH appending to zshrc/bashrc'
