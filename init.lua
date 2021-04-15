@@ -31,6 +31,7 @@ require('nv-lightbulb')
 require('nv-indentline')
 require('nv-bookmark')
 require('nv-dependency')
+require('nv-omnisharp')
 
 vim.cmd('source ~/.config/nvim/vimscript/nv-whichkey/init.vim')
 
