@@ -1,2 +1,0 @@
-local nv_utils = {}
-
