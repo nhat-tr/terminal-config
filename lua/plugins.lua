@@ -64,7 +64,7 @@ return require('packer').startup(function(use)
     use 'kyazdani42/nvim-tree.lua'
 
     -- Color
-    Plug 'morhetz/gruvbox'
+    use 'morhetz/gruvbox'
     use 'norcalli/nvim-colorizer.lua'
     use 'sheerun/vim-polyglot'
 
