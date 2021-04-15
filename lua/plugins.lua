@@ -19,9 +19,6 @@ return require('packer').startup(function(use)
     -- Packer can manage itself as an optional plugin
     use 'wbthomason/packer.nvim'
     
-    use 'w0rp/ale'
-    use 'prabirshrestha/asyncomplete.vim'
-
     -- LSP
     use 'neovim/nvim-lspconfig'
     use 'glepnir/lspsaga.nvim'
