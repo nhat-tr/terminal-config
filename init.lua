@@ -25,7 +25,6 @@ require('nv-floaterm')
 require('nv-vim-rooter')
 require('nv-matchup')
 require('nv-lspkind')
---require('nv-numb')
 require('nv-hop')
 require('nv-gitblame')
 require('nv-nvim-peekup')
@@ -33,11 +32,8 @@ require('nv-lightbulb')
 require('nv-indentline')
 require('nv-bookmark')
 require('nv-dependency')
--- require('nv-lspinstall')
 
--- Which Key (Hope to replace with Lua plugin someday)
 vim.cmd('source ~/.config/nvim/vimscript/nv-whichkey/init.vim')
-vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
 
 -- LSP
 require('lsp')
@@ -53,5 +49,3 @@ require('lsp.css-ls')
 require('lsp.docker-ls')
 require('lsp.html-ls')
 require('lsp.omnisharp-ls')
--- vim.lsp.callbacks["textDocument/publishDiagnostics"] = function() end
--- vim.lsp.handlers["textDocument/publishDiagnostics"] = nil

@@ -1,3 +1,3 @@
 vim.cmd('let g:nvcode_termcolors=256')
 
-vim.cmd('let colorscheme="gruvbox"')
+vim.cmd('colorscheme gruvbox')

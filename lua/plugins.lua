@@ -13,7 +13,6 @@ local my = function(file) require(file) end
 
 vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile' -- Auto compile when there are changes in plugins.lua
 
--- require('packer').init({display = {non_interactive = true}})
 require('packer').init({display = {auto_clean = false}})
 
 return require('packer').startup(function(use)
@@ -25,7 +24,6 @@ return require('packer').startup(function(use)
     use 'glepnir/lspsaga.nvim'
     use 'onsails/lspkind-nvim'
     use 'kosayoda/nvim-lightbulb'
-    use 'mfussenegger/nvim-jdtls'
     use 'kabouzeid/nvim-lspinstall'
 
     -- Debugging
@@ -33,7 +31,6 @@ return require('packer').startup(function(use)
 
     -- Autocomplete
     use 'hrsh7th/nvim-compe'
-    use 'mattn/emmet-vim'
     use 'hrsh7th/vim-vsnip'
     use "rafamadriz/friendly-snippets"
 
@@ -51,7 +48,6 @@ return require('packer').startup(function(use)
 
     -- Status Line and Bufferline
     use { 'glepnir/galaxyline.nvim' }
-    -- use { 'glepnir/galaxyline.nvim', config = function() require'nv-galaxyline' end } -- inline fn alternative
     use 'romgrk/barbar.nvim'
 
     -- Telescope
@@ -101,11 +97,11 @@ return require('packer').startup(function(use)
   	use 'turbio/bracey.vim'
 
     -- Database
-    use 'tpope/vim-dadbod'
-    use 'kristijanhusak/vim-dadbod-ui'
-    use 'kristijanhusak/vim-dadbod-completion'
+    --use 'tpope/vim-dadbod'
+    --use 'kristijanhusak/vim-dadbod-ui'
+    --use 'kristijanhusak/vim-dadbod-completion'
 
     -- Documentation Generator
-    use {'kkoomen/vim-doge', run = ':call doge#install()'}
+    --use {'kkoomen/vim-doge', run = ':call doge#install()'}
 
  end)
