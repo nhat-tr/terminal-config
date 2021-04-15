@@ -52,5 +52,6 @@ require('lsp.graphql-ls')
 require('lsp.css-ls')
 require('lsp.docker-ls')
 require('lsp.html-ls')
+require('lsp.omnisharp-ls')
 -- vim.lsp.callbacks["textDocument/publishDiagnostics"] = function() end
 -- vim.lsp.handlers["textDocument/publishDiagnostics"] = nil
