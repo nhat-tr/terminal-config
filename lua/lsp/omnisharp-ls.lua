@@ -2,9 +2,9 @@ local pid = vim.fn.getpid()
 local omnisharp_bin = "/omnisharp-vim/omnisharp-roslyn/OmniSharp.exe"
 local cmd = {};
 if vim.fn.has('win32') == 1 then
-  cmd = {DATA_PATH .. omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) }
+  cmd = {CACHE_PATH .. omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) }
 else 
-  cmd = {"mono", DATA_PATH .. omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) }
+  cmd = {"mono", CACHE_PATH .. omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) }
 end
 
 require'lspconfig'.omnisharp.setup{
