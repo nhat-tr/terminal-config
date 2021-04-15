@@ -1,7 +1,7 @@
 local pid = vim.fn.getpid()
 local omnisharp_bin = "/omnisharp-vim/omnisharp-roslyn/OmniSharp.exe"
 local cmd = {};
-local path = vim.fn.substitute(CACHE_PATH, 'nvim','','')
+local path = vim.fn.substitute(CACHE_PATH, '/nvim','','')
 if vim.fn.has('win32') == 1 then
   cmd = {path .. omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) }
 else 
