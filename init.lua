@@ -32,6 +32,7 @@ require('nv-indentline')
 require('nv-bookmark')
 require('nv-dependency')
 require('nv-omnisharp')
+require('nv-lspinstall')
 
 vim.cmd('source ~/.config/nvim/vimscript/nv-whichkey/init.vim')
 
