@@ -9,7 +9,6 @@ require('keymappings')
 require('colorscheme')
 
 -- Plugins
-require('nv-lspinstall')
 require('nv-compe')
 require('nv-colorizer')
 require('nv-nvimtree')
